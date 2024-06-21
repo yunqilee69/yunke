@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yunke.framework.mapper.DictItemMapper">
+
+    <resultMap id="DictItemMap" type="DictItem">
+        <id column="id" property="id"/>
+        <result column="dict_id" property="dictId"/>
+        <result column="code" property="code"/>
+        <result column="parent_id" property="parentId"/>
+        <result column="name" property="name"/>
+        <result column="value" property="value"/>
+        <result column="remark" property="remark"/>
+        <result column="is_visible" property="visible"/>
+        <result column="is_disabled" property="disabled"/>
+        <result column="font_color" property="fontColor"/>
+        <result column="background_color" property="backgroundColor"/>
+    </resultMap>
+
+    <sql id="baseColumn">
+        id, dict_id, code, parent_id, name, value, remark, is_visible, is_disabled, font_color, background_color
+    </sql>
+
+    <select id="selectAll" resultMap="DictItemMap">
+        select
+            <include refid="baseColumn"></include>
+        from dict_item
+    </select>
+</mapper>

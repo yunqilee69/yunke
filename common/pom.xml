@@ -6,11 +6,10 @@
         <groupId>com.yunke</groupId>
         <artifactId>yunke</artifactId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath>../pom.xml</relativePath> <!-- lookup parent from repository -->
     </parent>
-
     <artifactId>common</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0-SNAPSHOT</version>
     <name>common</name>
     <description>common</description>
 

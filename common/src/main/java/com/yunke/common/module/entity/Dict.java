@@ -17,10 +17,13 @@ public class Dict {
     // 编码
     private String code;
 
-    // 类型
+    // 类型，对应前端组件类型
     private DictTypeEnum type;
 
-    // 描述
-    private String description;
+    // 是否系统级别
+    private Boolean system;
+
+    // 备注
+    private String remark;
 
 }

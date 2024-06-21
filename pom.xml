@@ -3,6 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <modules>
         <module>framework</module>
+        <module>common</module>
     </modules>
     <groupId>com.yunke</groupId>
     <artifactId>yunke</artifactId>

@@ -25,8 +25,8 @@ public class DictItem {
     // 数值
     private String value;
 
-    // 描述
-    private String desc;
+    // 备注
+    private String remark;
 
     // 是否可见
     private Boolean visible;
