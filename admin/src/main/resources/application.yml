@@ -8,6 +8,11 @@ spring:
     username: root
     password: 123456
     type: com.alibaba.druid.pool.DruidDataSource
+  redis:
+    host: localhost
+    port: 6379
+
+
 
 mybatis:
   # 对于boolean类型的字段，数据库存储为is_XXX，java实体类均为xxx。必须使用resultMap进行映射
